@@ -11,7 +11,7 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log" for executing in server we use this line $0 -->means previous run scriptname
 #LOGFILE="/Users/kethanav/Desktop/DevOps_2025/shellscript/$0-$TIMESTAMP.log" #for executing in macbook
 
-echo "script started executing at $TIMESTAMP" >>$LOGFILE
+echo "script started executing at $TIMESTAMP" &>>$LOGFILE
 # VALIDATE is a function, usually in function we write condition and insted of repeating code 
 # we call function where it is required DRY principel DONT REPEAT Yourself
 # VALIDATE function checkes prvious command ran success or failed.
