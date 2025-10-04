@@ -56,4 +56,12 @@ VALIDATE $? "Starting  mongodb service"
 # SED editor= streamline editor= temprory editior 
 # it will change in background with out opening file, like replaceing 
 
+sed -i 's/27.0.0.1/0.0.0.0/g' /etc/mongod.conf &>> $LOGFILE
+VALIDATE $? "remote acess to Mongodb "
+
+systemctl restart mongod  &>> $LOGFILE
+VALIDATE $? "Restarting  mongodb "
+
+
+
 
