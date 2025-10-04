@@ -8,7 +8,7 @@ Y="\033[33m" # in shell script for Yellow color we use /e[33m
 N="\033[0m"  # in shell script for Normal color we use /e[0m
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
-LOGFILE="/tmp/$0-$TIMESTAMP.log" for executing in server we use this line $0 -->means previous run scriptname
+LOGFILE="/tmp/$0-$TIMESTAMP.log" #for executing in server we use this line $0 -->means previous run scriptname
 #LOGFILE="/Users/kethanav/Desktop/DevOps_2025/shellscript/$0-$TIMESTAMP.log" #for executing in macbook
 
 echo "script started executing at $TIMESTAMP" &>>$LOGFILE
