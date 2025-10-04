@@ -1,4 +1,5 @@
 #!/bin/bash
+# t3.medium or t3.small will work
 ID=$(id -u) # for getting the ID ,root user means it will be zero other number like 2.4. then its not root user
 
 R="\033[31m" # in shell script for Red color we use /e[31m
@@ -7,8 +8,8 @@ Y="\033[33m" # in shell script for Yellow color we use /e[33m
 N="\033[0m"  # in shell script for Normal color we use /e[0m
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
-#LOGFILE="/tmp/$0-$TIMESTAMP.log" for executing in server we use this line $0 -->means previous run scriptname
-LOGFILE="/Users/kethanav/Desktop/DevOps_2025/shellscript/$0-$TIMESTAMP.log" #for executing in macbook
+LOGFILE="/tmp/$0-$TIMESTAMP.log" for executing in server we use this line $0 -->means previous run scriptname
+#LOGFILE="/Users/kethanav/Desktop/DevOps_2025/shellscript/$0-$TIMESTAMP.log" #for executing in macbook
 
 echo "script started executing at $TIMESTAMP" >>$LOGFILE
 # VALIDATE is a function, usually in function we write condition and insted of repeating code 
