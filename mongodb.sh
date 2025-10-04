@@ -40,7 +40,7 @@ cp mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGFILE
 VALIDATE $? "copied MongoDB Repo"
 
 
-dnf install mongodb-org -y  &>> $LOGFILE
+dnf install -y mongodb-org   &>> $LOGFILE
 
 VALIDATE $? "Installing MongoDB"
 
@@ -51,5 +51,9 @@ VALIDATE $? "Enabling mongodb service"
 systemctl start mongod &>> $LOGFILE
 
 VALIDATE $? "Starting  mongodb service"
+
+
+# SED editor= streamline editor= temprory editior 
+# it will change in background with out opening file, like replaceing 
 
 
