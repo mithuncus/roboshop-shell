@@ -1,0 +1,31 @@
+# In YAML(Yet another Markup Language) everything starts with hyfen " - ". Indentation spaces matter
+- name: Madhan  #at the end click enter and press tab button it will go to exact spacing
+  dob: "2023-09-09"
+  address:  # here is address is object  and it needs to in line 
+    address-line1: vivek street
+    address-line2: sanath nagar
+    city: HYD
+  email: madhancus@gmail.com
+
+- name: sekhar
+  dob: "2025-10-06"
+  address: 
+    address-line1: vivek road
+    address-line2: manikonda
+  email: madhanc2@gmail.com
+
+  ## List of address how we write 
+- name: madhan raju
+  dob: "2025-10-25"
+  address:
+  - address-line1: vivek street ## we are giving list of address for a person, list always starts with -
+    address-line2: sanath nagar
+    city: HYD
+  - address: 
+    address-line1: vivek road
+    address-line2: manikonda
+    city: hyd
+
+# overall yaml   fields and objects, 
+
+
